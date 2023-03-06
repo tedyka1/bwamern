@@ -4,13 +4,11 @@ import LandingPage from "./pages/LandingPage";
 import './assets/scss/style.scss';
 
 function App() {
-  return (
-    <div className="App">
-        <Router>
-            <Route path="/" component={LandingPage}></Route>
-        </Router>
-    </div>
-  );
-}
+  return <div className="App">
+    <Router>
+        <Route path="/" component={LandingPage}></Route>
+    </Router>
+  </div>
+};
 
 export default App;

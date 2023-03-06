@@ -4,11 +4,11 @@ import BrandIcon from "./iconText";
 
 export default function Header(props){
     const getNavLinkClass = path => {
-      return props.location.pathname === path ? "active" : "";
-    };
+      return props.location.pathname === path ? " active" : "";
+    }
 
     return (
-        <Header className="spacing-sm">
+        <header className="spacing-sm">
             <div className="container">
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <BrandIcon/>
@@ -38,6 +38,6 @@ export default function Header(props){
                     </div>
                 </nav>
             </div>
-        </Header>
+        </header>
     );
 };
