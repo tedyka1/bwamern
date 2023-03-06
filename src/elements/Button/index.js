@@ -34,22 +34,22 @@ export default function Button(props) {
     if(props.isExternal) {
       return (
         <a 
-        href={props.href} 
-        className={className.join("")} 
-        style={props.style} 
-        target={props.target === "_blank" ?"_blank":undefined} 
-        rel={props.target === "_blank" ?"noopener noreferrer":undefined}>{props.children}
+          href={props.href} 
+          className={className.join("")} 
+          style={props.style} 
+          target={props.target === "_blank" ?"_blank":undefined} 
+          rel={props.target === "_blank" ?"noopener noreferrer":undefined}>{props.children}
         </a>
       )
     } else {
       return (
         <Link 
-        to={props.href} 
-        className={className.join("")} 
-        style={props.style}
-        onClick={onClick}
+          to={props.href} 
+          className={className.join("")} 
+          style={props.style}
+          onClick={onClick}
         >
-        {props.children}
+          {props.children}
         </Link>
       )
     }
@@ -57,11 +57,11 @@ export default function Button(props) {
 
   return (
     <button 
-    href={props.href} 
-    className={className.join("")} 
-    style={props.style}
+      className={className.join(" ")}
+      style={props.style}
+      onClick={onClick}
     >
-    {props.children}
+      {props.children}
     </button>
   )
 }
@@ -72,11 +72,12 @@ Button.propTypes = {
   href: propTypes.string,
   target: propTypes.string,
   className: propTypes.string,
+  isPrimary: propTypes.bool,
+  isExternal: propTypes.bool,
   isDisabled: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
   isLarge: propTypes.bool,
   isBlock: propTypes.bool,
-  isExternal: propTypes.bool,
   hasShadow: propTypes.bool,
 }
