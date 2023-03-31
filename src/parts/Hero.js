@@ -42,7 +42,7 @@ export default function Hero(props) {
                     <div className="row" style={{marginTop: 80}}>
                         <div className="col-auto" style={{marginRight: 35}}>
                             <img width="36" height="36"
-                                src="/assets/image/ic_traveller.svg" 
+                                src="/images/ic_traveller.svg" 
                                 alt={`${props.data.travelers} Traveler`}
                             />
                             <h6 className="mt-3">
@@ -51,7 +51,7 @@ export default function Hero(props) {
                         </div>
                         <div className="col-auto" style={{marginRight: 35}}>
                             <img width="36" height="36"
-                                src="/assets/image/ic_treasure.svg" 
+                                src="/images/ic_treasure.svg" 
                                 alt={`${props.data.treasures} Treasure`}
                             />
                             <h6 className="mt-3">
@@ -60,7 +60,7 @@ export default function Hero(props) {
                         </div>
                         <div className="col-auto">
                             <img width="36" height="36"
-                                src="/assets/image/ic_cities.svg" 
+                                src="/images/ic_cities.svg" 
                                 alt={`${props.data.cities} Cities`}
                             />
                             <h6 className="mt-3">
