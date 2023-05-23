@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 
-import PropTypes from 'prop-types'
-import { useState } from 'react';
+import propTypes from 'prop-types'
 
 export default function Stepper(props) {
     const { steps, initialStep } = props;
