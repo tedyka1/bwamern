@@ -31,7 +31,7 @@ export default function Text(props) {
 
         if (type === "email") {
             if (!pattern.test(event.target.value)) setHasError(errorResponse);
-            else setHasError("");
+            else setHasError(null);
         }
 
         if (type === "tel") {
@@ -54,6 +54,9 @@ export default function Text(props) {
                     type={type}
                     pattern={pattern}
                     className={["form-control", inputClassName].join(" ")}
+                    value={value}
+                    placeholder={placeholder}
+                    onChange={onChange}
                 />
                 {append && (
                     <div className="input-group-append bg-gray-900">
